@@ -1,0 +1,3 @@
+Database testDB = new Database();
+testDB.bootstrap();
+testDB.exportSeats();

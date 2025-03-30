@@ -10,7 +10,7 @@ node3 = Node(3)
 node4 = Node(4)
 node5 = Node(5)
 
-node1.prev = node5
+# node1.prev = node5
 node1.next = node2
 
 node2.prev = node1
@@ -23,15 +23,15 @@ node4.prev = node3
 node4.next = node5
 
 node5.prev = node4
-node5.next = node1
+# node5.next = node1
 
-print("Traversing a circular doubly linkly list backwards\n")
+print("Traversing a doubly linkly list backwards\n")
 currentNode = node5
-startNode = node5
+# startNode = node5
 print(currentNode.data, end=" -> ")
 currentNode = currentNode.prev
 
-while currentNode != startNode:
+while currentNode:
     print(currentNode.data, end=" -> ")
     currentNode = currentNode.prev
     
